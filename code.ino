@@ -1,5 +1,10 @@
-// This example renders a png file that is stored in a FLASH array
-// using the PNGdec library (available via library manager).
+//This project uses the PNGdec library and the Adafruit Neopixel library.
+//We use the PNGdec library to load images onto the ESP32
+//and we use the Adafruit Neopixel library to control the
+//LED light. 
+
+// This project renders a png file that is stored in a FLASH array
+// using the PNGdec library.
 
 // Image files can be converted to arrays using the tool here:
 // https://notisrac.github.io/FileToCArray/
@@ -152,15 +157,6 @@ void loop()
 
       pixels.show();   // Send the updated pixel colors to the hardware.
     }
-
-  // if (tcount == 600){
-  //   tcount = 0;
-  //   mode = "summer";
-  // } else if (tcount == 300) {
-  //   mode = "autumn"; 
-  // } else {
-  //   tcount++;
-  // }
 }
 
 
