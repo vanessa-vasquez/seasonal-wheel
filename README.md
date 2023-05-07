@@ -11,9 +11,10 @@ For this project, you will need an ESP32 TTGO T-Display. I will be using the Ard
 2. To set up the Arduino IDE environment, follow the instructions in the demo [here](https://www.youtube.com/watch?v=adLUgmCJKnM).
 - Some issues that came up for me in setting up this environment included lack of dependencies (e.g. python) and the upload speed. For example, I found that I had to lower my upload speed to 115200. Keep these in mind and make changes accordingly if you come across any issues when following the demo -- the output should let you know.
 3. Open up code.ino in the Arduino IDE.
-3. This project uses 4 data pins for the electric paint connections and 1 data pin for the LED ring. Make sure that your electric connections match up with pin numbers you see in the code. The pins array refers to the electric paint pins. Remove or add more pins from this array as you see fit. Pin 17 is allocated to the LED ring.
-3. Connect to your ESP32. Make sure that you select your board on the top left. 
-4. Upload your code and voilà! The code should now be running on your ESP32.
+4. Make sure to download the Adafruit Neopixel Library as well as the TFT_eSPI library from the tutorial above.
+5. This project uses 4 data pins for the electric paint connections and 1 data pin for the LED ring. Make sure that your electric connections match up with pin numbers you see in the code. The pins array refers to the electric paint pins. Remove or add more pins from this array as you see fit. Pin 17 is allocated to the LED ring.
+6. Connect to your ESP32. Make sure that you select your board on the top left. 
+7. Upload your code and voilà! The code should now be running on your ESP32.
 
 ## Technical Decisions
 The magic of the seasonal wheel comes in two parts: 
